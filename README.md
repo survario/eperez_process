@@ -1,9 +1,9 @@
-Emmanuel Perez - Desafío Inicio de Sesión
+Emmanuel Perez - Desafío Objeto Process
 -------------------------------------------------------------
 
 Antes de ejecutar la aplicación, 
 
-1. Levantar un servidor local mongoDB en una carpeta a elección.
+1. Levantar un servidor local mongoDB en una carpeta a elección (o utilizar una base online).
 
 2. Crear base de datos de nombre ecommerce en el servidor mongodb (use ecommerce)
 
@@ -11,14 +11,22 @@ Antes de ejecutar la aplicación,
 
 - npm start
 
+Si desea ingresar por terminal un número de puerto personalizado (mediante minimist), ingrese:
 
-A través del navegador, acceder a las rutas:
+- npm start -p <PORT>
 
-- localhost:8080/login
 
-- localhost:8080/registrar
+A través del navegador, acceder a las rutas (reemplace <PORT> por el número de Puerto utilizado (por defecto 8080)):
 
-- localhost:8080/api/productos-test (productos generados con faker)
+- localhost:<PORT>/info
+
+- localhost:<PORT>/api/randoms
+
+- localhost:<PORT>/login
+
+- localhost:<PORT>/registrar
+
+- localhost:<PORT>/api/productos-test (productos generados con faker)
 
 ------------------------------------------------------------------------
 

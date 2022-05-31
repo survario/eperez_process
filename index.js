@@ -256,8 +256,8 @@ app.get("/info", (req, res) => {
 });
 
 
-app.get("/randoms", (req, res) => {
-  let cant = req.query.cant || 100; //100000000;
+app.get("/api/randoms", (req, res) => {
+  let cant = req.query.cant || 100000000;
 
   const randoms = fork(__dirname + "/randoms.js", ["--CANT", cant]);
   randoms.on("message", (response) => {
